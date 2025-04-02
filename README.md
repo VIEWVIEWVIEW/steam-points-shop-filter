@@ -12,4 +12,4 @@ The steam points shop doesn't filter out items, which aren't buyable with steam 
 ![https://f003.backblazeb2.com/file/sharexxx/ShareX/2025/04/chrome_6RovH7JylgzDWPaS1O.png](https://f003.backblazeb2.com/file/sharexxx/ShareX/2025/04/chrome_6RovH7JylgzDWPaS1O.png)
 
 
-![gif](https://f003.backblazeb2.com/file/sharexxx/ShareX/2025/04/chrome_Xpwd5n0e9Zec21iY5w.gif)
+![video (warning sound! cba to re-record)](https://f003.backblazeb2.com/file/sharexxx/ShareX/2025/04/chrome_TOHItBPK2bEdHqEkMd.mp4)

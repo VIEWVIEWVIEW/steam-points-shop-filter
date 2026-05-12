@@ -1,9 +1,9 @@
 # steam-points-shop-filter
 
-The steam points shop doesn't filter out items, which aren't buyable with steam points (due to game ownership required). This script draws a red/green/blue box (can't buy/can buy/already owned) around all items in the gallery by iterating through all modals and scrolling down (hacky, but was the quickest way to implement this).
+This script shows which items are buyable/not buyable/already owned in the steam points store.
 
-1. Simply go to the steam points shop and navigate to a "cluster" (aka "gallery"), e.g. https://store.steampowered.com/points/shop/c/backgrounds/cluster/3.
-2. Then copy and paste the script from script.js into your browser console. Then wait a few minutes (or hours if you didn't add a search query) until all items are marked.
+1. visit the steam points shop and navigate to a "cluster", e.g. https://store.steampowered.com/points/shop/c/backgrounds/cluster/3.
+2. Then copy and paste the script from script.js into your browser console. Then wait a few minutes until all items are marked.
 3. hit pause/resume to pause/resume checking (duh!).
 
 ---

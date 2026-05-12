@@ -2,6 +2,7 @@
     const sleep = (ms) => new Promise((res) => setTimeout(res, ms));
 
     const CONTROL_ID = "steam-points-shop-filter-controls";
+    const DIALOG_CONTROL_CLASS = "steam-points-shop-filter-dialog-control";
     const CHECKED_ATTR = "data-spsf-checked";
     const CHECKING_ATTR = "data-spsf-checking";
 
@@ -19,6 +20,21 @@
         div.FullModalOverlay dialog button,
         dialog[open] > *,
         dialog[open] button {
+            pointer-events: auto !important;
+        }
+
+        .${DIALOG_CONTROL_CLASS} {
+            position: fixed !important;
+            top: 10px !important;
+            left: 10px !important;
+            z-index: 2147483647 !important;
+            padding: 8px 15px !important;
+            font-weight: bold !important;
+            border-radius: 5px !important;
+            border: none !important;
+            background: #1677ff !important;
+            color: #fff !important;
+            cursor: pointer !important;
             pointer-events: auto !important;
         }
     `;
@@ -114,6 +130,22 @@
         }
 
         return waitForModalClose(1500);
+    };
+
+    const attachDialogPauseButton = (modal) => {
+        if (!modal || modal.querySelector(`.${DIALOG_CONTROL_CLASS}`)) return;
+
+        const modalPauseBtn = document.createElement("button");
+        modalPauseBtn.className = DIALOG_CONTROL_CLASS;
+        modalPauseBtn.textContent = "PAUSE CHECKER";
+        modalPauseBtn.onclick = (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            setRunning(false);
+            closeModal(modal);
+        };
+
+        modal.appendChild(modalPauseBtn);
     };
 
     let isRunning = false;
@@ -244,6 +276,7 @@
                 return false;
             }
 
+            attachDialogPauseButton(modal);
             await sleep(modalDelay);
 
             if (!isRunning) {

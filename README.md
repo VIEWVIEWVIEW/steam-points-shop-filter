@@ -6,6 +6,8 @@ The steam points shop doesn't filter out items, which aren't buyable with steam 
 2. Then copy and paste the script from script.js into your browser console. Then wait a few minutes (or hours if you didn't add a search query) until all items are marked.
 3. hit pause/resume to pause/resume checking (duh!).
 
+---
+
 - the modal delay is the delay between checking if you can/cannot buy the background. you can probably keep this delay low as it's all on local data.
 - the "batch delay" is the delay for scrolling down and loading new backgrounds from steam. this should be set higher, as this action performs a network request to steam.
 

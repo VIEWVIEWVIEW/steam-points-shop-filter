@@ -3,7 +3,7 @@
 This script shows which items are buyable/not buyable/already owned in the steam points store.
 
 1. visit the steam points shop and navigate to a "cluster", e.g. https://store.steampowered.com/points/shop/c/backgrounds/cluster/3.
-2. Then copy and paste the script from script.js into your browser console. Then wait a few minutes until all items are marked.
+2. Then copy and paste the [script.js](https://github.com/VIEWVIEWVIEW/steam-points-shop-filter/blob/main/script.js) into your browser console. Then wait a few minutes until all items are marked.
 3. hit pause/resume to pause/resume checking (duh!).
 
 ---
